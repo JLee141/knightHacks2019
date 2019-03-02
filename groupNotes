@@ -1,4 +1,10 @@
 NOTES!
+//IDEAS
+1) Leverage the google cloud API to the website
+2) Add spicy memes in a nice easter egg for the presentation
+3)
+
+
 //PHP Videos
 Derek Banas
 https://www.youtube.com/watch?v=7TF00hJI78Y
@@ -9,3 +15,4 @@ https://www.w3schools.com/php/default.asp
 
 //Project We are working on
 The idea behind the project is to retrieve data on hackathon events and create a website to create an iCals automatically so that you can import it into the calendar app of choice.
+
