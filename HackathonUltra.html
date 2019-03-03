@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Arduino Time Baby!</title>
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Muli" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
+<title>Hackathon Updater</title>
 <style>
-
+/*
+Deez Nutz
+*/
 body {
-  font-family: 'Raleway', sans-serif;
   text-align: center;
-  background: #adadeb;
+  background: #f2f2f2;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -17,36 +19,71 @@ h1 {
 }
   
 p {
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
 }
 
-button {
-  font-family: 'Raleway', sans-serif;
+form {
+  box-shadow:0 5px 15px rgba(0,0,0,0.15);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 6px;
+}
+
+input, select {
+  margin: 12px 2px;
+}
+
+.subHeader {
   font-size: 20px;
+}
+
+#submit {
   border-style: outset;
-  border-color: #4747d1;
-  background: #9999e6;
-  padding: 2px 6px;
+  border-width: 3px;
+  background: #f2f2f2;
 }
 
+#submit:hover {
+  background: ;
+}
 </style>
 </head>
 <body>
 <main>
-<p>In honor of the 2k19 KnightHacks, we would like to present:</p>
-<header><h1><u>Arduino Adventures</u></h1></header>
-<button onclick="start()">Ready?</button><br><br>
-</main>
-<script>
-function start() {
-  
-}
+<div>
+<header><h1>Hackathon Updater!</h1></header>
+<p class="subHeader">Subcribe to get information about Hackathons for 2019!</p>
+<form>
+<p>Which Hackathons would you like to be informed about?</p>
+<label for="state"><input id="stateCheckbox" type="checkbox">State</label>
+<label for="country"><input id="countryCheckbox" type="checkbox">Country</label><br>
+<label for="notificationTiming">How far in advance would you like to be informed?<br>
+  <select id="dropdown" name="noficationTiming">
+    <option disabled value>Select an Option</option>
+    <option value="oneWeek">One Week</option>
+    <option value="twoWeeks">Two Weeks</option>
+    <option value="oneMonth">One Month</option>
+    <option value="twoMonths">Two Months</option>
+  </select>
+</label><br>
+<!--
+<label for="oneWeek"><input id="oneWeek" type="radio" name="twoWeeks">One Week</label><br>
+<label for="twoWeeks"><input id="twoWeeks" type="radio" name="twoWeeks">Two Weeks</label><br>
+<label for="oneMonth"><input id="oneMonth" type="radio" name="oneMonth">One Month</label><br>
+<label for="twoMonths"><input id="twoMonths" type="radio" name="twoMonths">Two Months</label><br>
+-->
+<label for="submit"><input id="submit" type="submit"></label>
+</form>
 
+</div>
+<script>
+  
 </script>
+</main>
 <footer>
 <address>
-Created by Spicy Caliente Memez at UCF Hackathon
+  
 </address>
 </footer>
 </body>
